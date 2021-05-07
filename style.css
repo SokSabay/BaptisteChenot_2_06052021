@@ -1,0 +1,46 @@
+#bloc_page
+{
+    width: 80%;
+    margin: auto;
+    background-color: grey;
+}
+
+
+
+#en_tete
+{
+	display: flex;
+	justify-content: space-between;	
+	background-color: red;
+}
+
+nav ul
+{
+	list-style-type: none;	
+}
+
+nav .nav
+{
+	display: flex;
+	list-style-type: none;	
+	align-self : flex-end;
+}
+
+
+#section1
+{
+	background-color: red;
+	display: flex;
+    justify-content: space-between;
+}
+#LePied
+{
+	background-color: red;
+	display: flex;
+    justify-content: space-around;
+}
+
+.inline li
+{
+	display: inline;
+}
