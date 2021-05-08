@@ -12,6 +12,14 @@
 {
 	display: flex;
 	justify-content: space-between;	
+		  text-align: center;
+}
+
+#en_tete img
+{
+	width: 100px;
+	height: auto;
+
 }
 
 #section1
@@ -24,8 +32,6 @@
 {
 	display: flex;
 	flex-wrap: wrap;
-	align-content: flex-start;
-	width:70%;
 }
 
 #populaires
@@ -38,6 +44,7 @@
 {
 	display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #LePied
@@ -74,11 +81,77 @@ nav .nav
 }
 
 /*----------------------------------------------------------------------------------------------------*/
+/*Barre de recherche Search Bar*/
+/*----------------------------------------------------------------------------------------------------*/
+#Search
+{
+  display: flex;
+	background-color: white;
+  width: 500px;
+  height: 50px;
+  border: 2px solid #F2F2F2;
+  overflow: hidden;	
+  border-radius: 20px 20px 20px 20px;
+  
+}
+
+#Search button
+{
+
+  background-color: #0065FC; /* Green */
+  border: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+
+#Search input 
+{
+  border : 0px;
+  height : 100%;
+  object-fit: cover; 
+
+}
+
+#Search i
+{
+  width : 100px;
+  height: 100%;
+  background-color: #F2F2F2;
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+
+  
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
 /*Propriete des cadres*/
 /*----------------------------------------------------------------------------------------------------*/
 article
 {
-    border: 3px blue dashed;
+	border-radius: 10px;
+	background: #eee; 
+	margin: 15px;
+	padding: 15px 25px;
+}
+
+aside
+{
+	border-radius: 10px;
+	background: #eee; 
+	margin: 15px;
+	padding: 15px 25px;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -87,10 +160,7 @@ article
 
 img 
 {
-  border-radius: 4px;  /* Rounded border */
-  padding: 5px; /* Some padding */
-  width: 150px; /* Set a small width */
-  object-fit: cover; /* Ne deforme pas l'img */
+	border-radius: 15px;  /* Rounded border */
 }
 
 
@@ -98,15 +168,57 @@ img
 #section1 img
 {
 	width: 225px;
-height: 175px;
-border: 3px solid #ccc;
-background: #eee; 
-margin: auto;
-padding: 15px 25px;
+	height: 175px;
+	object-fit: cover; 
 }
-.line 
+
+#section2 img
 {
-
-	border-top: 1px dashed green;
-
+	width: 225px;
+	height: 175px;
+	object-fit: cover; 
 }
+
+.Description
+{ 
+	border: 15px solid white;
+	border-radius:10px;
+	background: white;
+	width: 225px;
+	height: 220px;
+	margin: 2px;
+	padding: 1px;
+}
+
+#section3
+{
+		display: flex;
+	justify-content: space-around;	
+		margin-top: 30px;	
+}
+.inline
+{
+	border: 2px solid #F2F2F2;
+	width: 150px;
+	height: 50px;
+	border-radius:360px;
+}
+
+.inline .bwark
+{
+	background-color: #DEEBFF;
+    border-radius:360px;
+    width: 50px;
+    height: 50px;
+}
+
+.inline i
+{
+	text-align: center;
+    vertical-align: middle;
+}
+.line
+{
+	border-top: 1px solid blue;
+}
+
