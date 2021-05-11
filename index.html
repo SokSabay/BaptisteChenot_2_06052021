@@ -4,30 +4,32 @@
 		<!-- Petit commentaire -->
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" media="screen and (max-width: 1280px)" href="smart_resolution.css" />
 		<title>Reservia</title>
+		<script src="https://kit.fontawesome.com/637f017d65.js" crossorigin="anonymous"></script>
 	</head>
-	<script src="https://kit.fontawesome.com/637f017d65.js" crossorigin="anonymous"></script>
 
-<body>
+
+	<body>
 	<div id="bloc_page">
 		<header>
 			<div id="en_tete">
-				<div class="tete">
-				    <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
-				</div>
+				
+				<img id="logo" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+				
 				<div class="tete">
 					<nav>
 						<ul class="nav">
-							<li class="line"><a href="#">Hébergements</a></li>
-							<li><a href="#">Activités</a></li>
-							<li><a href="#">S'inscrire</a></li>
+							<li class="Menu"><a href="#">Hébergements</a></li>
+							<li class="Menu"><a href="#">Activités</a></li>
+							<li class="Menu"><a href="#">S'inscrire</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<section>
+		<section id="Search_bar">
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>	
 			<div id="Search">
@@ -36,125 +38,171 @@
 				<button type="submit">Rechercher</button>
 		    </div>
 		</section>
-		<section id="section3">
+		
+		<section id="FILTER">
 			<h3>Filtres</h3>
 	       	<div class="inline">
-	       		<div class="bwark"><i class="fas fa-money-bill-wave"></i></div>
+	       		<div class="filtre">
+	       			<i class="fas fa-money-bill-wave"></i>
+	       		</div>
+	       		<span class="text">Economique</span>
 	       	</div>
 
 	       	<div class="inline">
-	       		<div class="bwark"><i class="fas fa-child"></i></div>
+	       		<div class="filtre">
+	       			<i class="fas fa-child"></i>
+	       		</div>
+	       		<span class="text">Familial</span>
 	       	</div>
 
 	       	<div class="inline">
-	       		<div class="bwark"><i class="fas fa-heart"></i></div>
+	       		<div class="filtre">
+	       			<i class="fas fa-heart"></i>
+	       		</div>
+	       		<span class="text">Romantique</span>
 	       	</div>
 
 	       	<div class="inline">
-	       		<div class="bwark"><i class="fas fa-dog"></i></div>
+	       		<div class="filtre">
+	       			<i class="fas fa-dog"></i>
+	       		</div>
+	       		<span class="text">Animaux autorisés</span>
 	       	</div>
 
 	    </section>
 
-			<p>Plus de 500 logements sont disponible dans cette ville</p>
+			<p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 	
 
-		<div id="section1">
-			<div class="Zbra">
+		<div id="accommodation">			
 				<article>
 					<h1>Hébergements Marseille</h1>
-						<div id="herbergements">
-							
-								<div class="Description">
-									<img src="images\hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-									<h3>Auberge de la Cannebière</h3>
+						<div id="hebergements">							
+								<div class="Description">												
+										<a><img class="IMG_style" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de Marseille"></a>
+										<a>Auberge de la Cannebière</a>
+										<a>cocuo</a>
+										<a>★★★★☆</a>								
 								</div>
 
-								<div class="Description">
-									<img src="images\hebergements\3_medium\fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-									<h3>Hôtel du port</h3>
+								<div class="Description">													
+									<a><img class="IMG_style" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo de Marseille"></a>
+									<a>Hôtel du port</a>	
+									<a>cocuo</a>	
+									<a>★★★★☆</a>	
 								</div>
 
-								<div class="Description">
-									<img src="images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg">	
-									<h3>Hôtel les mouettes</h3>							
+								<div class="Description">								
+									<a><img class="IMG_style" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo de Marseille"></a>	
+									<a>Hôtel les mouettes</a>	
+									<a>TEST</a>	
+									<a>★★★★☆</a>	
+																					
 								</div>
 
-								<div class="Description">
-									<img src="images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg">	
-									<h3>Hôtel de la mer</h3>							
+								<div class="Description">						
+									<a><img class="IMG_style" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo de Marseille"></a>	
+									<a>Hôtel de la mer</a>	
+									<a>cds</a>	
+									<a>★★★★☆</a>	
+																				
 								</div>
 
-								<div class="Description">
-									<img src="images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg">	
-									<h3>Auberge Le Panier</h3>							
+								<div class="Description">								
+									<a><img class="IMG_style" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo de Marseille"></a>	
+									<a>Auberge Le Panier</a>	
+									<a></a>	
+									<a>★★★★☆</a>											
 								</div>
 									
 								<div class="Description">
-									<img src="images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg">	
-									<h3>Hôtel chez Amina</h3>									
+									<a><img class="IMG_style" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo de Marseille"></a>	
+									<a>Hôtel chez Amina</a>	
+									<a>gfdg</a>	
+									<a>★★★★☆</a>																		
 								</div>
 						</div>
+					<span><a href="#">Afficher plus</a></span>
 				</article>
-			</div>
+			
 
-			<div class="Zbra">
+			
 				<aside>
-					<h1>Les plus populaires</h1>
-						<div id="populaires">
-							
-								<div class="Description">
-									<img src="images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+					<div class="pop_title">
+						<h1>Les plus populaires</h1>
+						<i class="fas fa-chart-line"></i>
+					</div>
+					<div id="populaires">						
+							<div class="Description">
+								<span><img class="IMG_style" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de Marseille"></span>	
+								<div class="Description_pop">
+									<span>Hôtel chez Amina</span>	
+									<span>gfdg</span>	
+									<span>★★★★☆</span>	
 								</div>
+							</div>
 
-								<div class="Description">
-									<img src="images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg">
+							<div class="Description">
+								<a><img class="IMG_style" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo de Marseille"></a>	
+								<div class="Description_pop">
+									<a>Hôtel chez Amina</a>	
+									<a>gfdg</a>	
+									<a>★★★★☆</a>	
 								</div>
+							</div>
 
-								<div class="Description">
-									<img src="images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg">								
-								</div>
-
-						
-						</div>
+							<div class="Description">
+								<a><img class="IMG_style" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo de Marseille"></a>	
+								<div class="Description_pop">
+									<a>Hôtel chez Amina</a>	
+									<a>gfdg</a>	
+									<a>★★★★☆</a>	
+								</div>							
+							</div>						
+					</div>
 				</aside>
-			</div>
+			
 		</div>
 
-		<div id="section2">
-			<div class="Zbrou">
-				<article>
+
+
+
+
+
+
+
+
+
+		<div id="ACTIVITY">
+			<article>
 					<h1>Activités à Marseille</h1>
 						<div id="activite">
 							
 								<div class="Description">
-									<img src="images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+									<img class="IMG_style" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo de Marseille">
 								</div>
 
 								<div class="Description">
-									<img src="images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+									<img class="IMG_style" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo de Marseille">
 								</div>
 
 								<div class="Description">
-									<img src="images\activites\3_medium\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">								
+									<img class="IMG_style" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo de Marseille">								
 								</div>
 
 								<div class="Description">
-									<img src="images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">									
+									<img class="IMG_style" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo de Marseille">									
 								</div>
 
 								<div class="Description">
-									<img src="images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg">									
+									<img class="IMG_style" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo de Marseille">									
 								</div>
 									
 								<div class="Description">
-									<img src="images\activites\3_medium\lena-paulin-wH2-EJoDcV0-unsplash.jpg">										
+									<img class="IMG_style" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo de Marseille">								
 								</div>
 						</div>
-
 				</article>
-			</div>
-
 		</div>
 
 		<footer>
@@ -162,7 +210,7 @@
 				<div class="pied">
 					<nav>
 						<ul>
-							<li><strong>À propos</strong></li><br />
+							<li><strong>À propos<br /></strong></li>
 							<li><a href="#">Fonctionnement du site</a></li>
 							<li><a href="#">Conditions générales de vente</a></li>
 							<li><a href="#">Données et confidentialité</a></li>
@@ -173,7 +221,7 @@
 				<div class="pied">
 					<nav>
 						<ul>
-							<li>Assistance</li>
+							<li><strong>Nos hébergements<br /></strong></li>
 							<li><a href="#">Centre d'aide</a></li>
 							<li><a href="#">Nous contacter</a></li>
 						</ul>
@@ -183,7 +231,7 @@
 				<div class="pied">
 					<nav>
 						<ul>
-							<li>Assistance</li>
+							<li><strong>À propos<br /></strong></li>
 							<li><a href="#">Centre d'aide</a></li>
 							<li><a href="#">Nous contacter</a></li>
 						</ul>

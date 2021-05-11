@@ -1,56 +1,45 @@
-/*PROPRIETE DE TOUTE LA PAGE*/
-
+/*----------------------------------------------------------------------------------------------------*/
+/*BODY*/
+/*----------------------------------------------------------------------------------------------------*/
 #bloc_page
 {
     width: 80%;
     margin: auto;
 }
 /*----------------------------------------------------------------------------------------------------*/
-/*FLEXBOX dans l'ordre de haut en bas*/
+/*HEADER*/
 /*----------------------------------------------------------------------------------------------------*/
 #en_tete
 {
 	display: flex;
-	justify-content: space-between;	
-		  text-align: center;
+	align-items : center;
+	justify-content : space-between;
 }
 
-#en_tete img
+#logo
 {
-	width: 100px;
+	width: 200px;
 	height: auto;
-
 }
 
-#section1
+.Menu
 {
-	display: flex;
-    justify-content: space-between;
-}
+	border: none;
+	background-color : transparent;
+	color: black;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer; 
+ }
 
-#herbergements
-{
-	display: flex;
-	flex-wrap: wrap;
-}
 
-#populaires
-{
-	display: flex;
-	flex-direction: column;
-	width:30%;
-}
-#activite
-{
-	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#LePied
-{
-	display: flex;
-    justify-content: space-around;
+.Menu:hover {
+	border-top:2px solid blue;
+	padding: 16px 32px;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -80,65 +69,213 @@ nav .nav
 	display: inline;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------*/
-/*Barre de recherche Search Bar*/
+/*SEARCH_BAR*/
 /*----------------------------------------------------------------------------------------------------*/
 #Search
 {
-  display: flex;
+	display: flex;
 	background-color: white;
-  width: 500px;
-  height: 50px;
-  border: 2px solid #F2F2F2;
-  overflow: hidden;	
-  border-radius: 20px 20px 20px 20px;
-  
+	width: 500px;
+	height: 50px;
+	border: 2px solid #F2F2F2;
+	overflow: hidden;	
+	border-radius: 20px 20px 20px 20px;
 }
 
 #Search button
 {
 
-  background-color: #0065FC; /* Green */
-  border: none;
-  color: white;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-
+	background-color: #0065FC; /* Green */
+	border: none;
+	color: white;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
 }
 
 #Search input 
 {
-  border : 0px;
-  height : 100%;
-  object-fit: cover; 
+	border : 0px;
+	height : 100%;
+	object-fit: cover; 
 
 }
 
 #Search i
 {
-  width : 100px;
-  height: 100%;
-  background-color: #F2F2F2;
-  margin: 0;
-  text-align: center;
-  padding-top: 15px;
+	width : 100px;
+	height: 100%;
+	background-color: #F2F2F2;
+	margin: 0;
+	text-align: center;
+	padding-top: 15px;
+}
 
-  
+/*----------------------------------------------------------------------------------------------------*/
+/*SECTION*/
+/*----------------------------------------------------------------------------------------------------*/
+#Search_bar
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+
+}
+
+.filtre
+{
+	background-color: #DEEBFF;
+	border-radius : 100%;
+	height: 3rem;
+	width : 3rem;
+	min-height : 3.5rem;
+	min-width : 3.5rem;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	margin : -2px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*Les Filtres*/
+/*----------------------------------------------------------------------------------------------------*/
+#FILTER
+{
+	display: flex;
+	
+}
+
+.inline
+{
+	display : flex;
+	align-items : center;
+	margin-right: : 2rem;
+	border :2px solid #d9d9d9;
+	border-radius : 2rem;
+	margin-bottom: 1rem;
+	cursor : pointer;
 }
 
 
 
+.i
+{
+	display: inline-block;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*SECTION1*/
+/*----------------------------------------------------------------------------------------------------*/
+#accommodation
+{
+	display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#hebergements
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#hebergements .IMG_style
+{
+	width: 300px;
+	height: 175px;
+	object-fit: cover; 
+	border-radius: 10px 10px 0 0;
+}
+
+#populaires .IMG_style
+{
+	width: 300px;
+	height: 175px;
+	object-fit: cover; 
+	border-radius: 10px 0px 0 10px;
+}
 
 
+article .Description
+{ 
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+
+	border: 2px solid white;
+	border-radius:10px;
+	background: white;
+
+	
+	margin: 10px;
+}
+aside .Description
+{
+	display: flex;
+  	flex-direction: row;
+
+  		border: 2px solid white;
+	border-radius:10px;
+	background: white;
+		margin: 10px;
+}
+
+.Description .Description_pop
+{
+	display: flex;
+  	flex-direction: column;
+}
+
+
+.pop_title
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*ACTIVITY*/
+/*----------------------------------------------------------------------------------------------------*/
+#ACTIVITY .IMG_style
+{
+	width: 300px;
+	height: 175px;
+	object-fit: cover; 
+	border-radius: 10px 10px 0 0;
+}
+
+
+#activite
+{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*POPULAR*/
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+/*----------------------------------------------------------------------------------------------------*/
+#LePied
+{
+	display: flex;
+    justify-content: space-between;
+}
 
 
 /*----------------------------------------------------------------------------------------------------*/
 /*Propriete des cadres*/
 /*----------------------------------------------------------------------------------------------------*/
-article
+#accommodation article
 {
 	border-radius: 10px;
 	background: #eee; 
@@ -154,71 +291,34 @@ aside
 	padding: 15px 25px;
 }
 
+
+footer
+{
+	background: #eee; 
+	padding: 15px 25px;
+}
+
+
+
+
+
+.text
+{
+	display: flex;
+    align-items: center;
+    justify-content : center;
+    padding-left : 5px;
+    padding-right :5px;
+}
+
+a
+{
+	text-decoration: none;
+	color: blue;
+}
+
 /*----------------------------------------------------------------------------------------------------*/
-/*Propriete des images*/
+/*RATE*/
 /*----------------------------------------------------------------------------------------------------*/
 
-img 
-{
-	border-radius: 15px;  /* Rounded border */
-}
-
-
-
-#section1 img
-{
-	width: 225px;
-	height: 175px;
-	object-fit: cover; 
-}
-
-#section2 img
-{
-	width: 225px;
-	height: 175px;
-	object-fit: cover; 
-}
-
-.Description
-{ 
-	border: 15px solid white;
-	border-radius:10px;
-	background: white;
-	width: 225px;
-	height: 220px;
-	margin: 2px;
-	padding: 1px;
-}
-
-#section3
-{
-		display: flex;
-	justify-content: space-around;	
-		margin-top: 30px;	
-}
-.inline
-{
-	border: 2px solid #F2F2F2;
-	width: 150px;
-	height: 50px;
-	border-radius:360px;
-}
-
-.inline .bwark
-{
-	background-color: #DEEBFF;
-    border-radius:360px;
-    width: 50px;
-    height: 50px;
-}
-
-.inline i
-{
-	text-align: center;
-    vertical-align: middle;
-}
-.line
-{
-	border-top: 1px solid blue;
-}
 
