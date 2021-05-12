@@ -154,7 +154,7 @@ nav .nav
 {
 	display : flex;
 	align-items : center;
-	margin-right: : 2rem;
+	margin-right:  2rem;
 	border :2px solid #d9d9d9;
 	border-radius : 2rem;
 	margin-bottom: 1rem;
@@ -174,7 +174,6 @@ nav .nav
 {
 	display: flex;
     justify-content: space-between;
-    background-color: black;
 }
 
 #hebergements
@@ -183,7 +182,11 @@ nav .nav
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-
+.img_conteneur
+{
+	overflow: hidden;
+	/* TODO : faire la taille */
+}
 #hebergements .IMG_style
 {
 	width: 300px;
@@ -242,21 +245,57 @@ aside .Description
 /*----------------------------------------------------------------------------------------------------*/
 /*ACTIVITY*/
 /*----------------------------------------------------------------------------------------------------*/
-#ACTIVITY .IMG_style
+#ACTIVITY
 {
-	width: 300px;
-	height: 175px;
-	object-fit: cover; 
-	border-radius: 10px 10px 0 0;
+	border: 1px solid blue;
+
+
 }
-
-
+#activite img
+{
+	width: 150px;
+	height: 150px;
+}
+.grandconteneur
+{
+	display: flex;
+	flex-direction: column;
+	border : 1px solid tomato;
+}
+.petitconteneur
+{
+	display: flex;
+	flex-direction: column;
+	border : 1px solid tomato;
+}
 #activite
 {
 	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	justify-content: space-between;
+	width: 0;
 }
+
+ a
+{ 
+ 
+  	border: 2px solid white;
+	border-radius:10px;
+	background: white;
+	margin: 10px;
+	height: 100%; 
+	width: 200px;
+	border: solid;
+	
+}
+
+#IMG_style_column
+{
+
+	object-fit: cover; 
+	border-radius: 10px 0px 0 10px;
+	width: 100%; 	
+}
+
 /*----------------------------------------------------------------------------------------------------*/
 /*POPULAR*/
 /*----------------------------------------------------------------------------------------------------*/
