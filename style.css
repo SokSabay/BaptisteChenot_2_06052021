@@ -3,9 +3,8 @@
 /*----------------------------------------------------------------------------------------------------*/
 #bloc_page
 {
-    width: 80%;
+    width: 78%;
     margin: auto;
-	border: 1px solid blue;
 }
 /*----------------------------------------------------------------------------------------------------*/
 /*HEADER*/
@@ -169,81 +168,111 @@ nav .nav
 	display: inline-block;
 }
 /*----------------------------------------------------------------------------------------------------*/
-/*SECTION1*/
+/*accomodation*/
 /*----------------------------------------------------------------------------------------------------*/
 #accommodation
 {
 	display: flex;
     justify-content: space-between;
-	border: 1px solid rgb(0, 255, 13);
 }
 
+
+#accommodation a
+{
+	box-shadow: 1px 1px 12px rgba(194, 194, 194, 0.397);
+
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*accomodation ARTICLE*/
+/*----------------------------------------------------------------------------------------------------*/
 #hebergements
 {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	border: 1px solid rgb(255, 0, 85);
 }
-.img_conteneur
+
+#hebergements p 
 {
-	overflow: hidden;
-	/* TODO : faire la taille */
+	margin-top:0em;
+	margin-bottom:0em;
 }
+
+#hebergements h3
+{
+	margin-bottom:0.5em;
+}
+
 #hebergements .IMG_style
 {
-	width: 300px;
-	height: 175px;
+	border-radius: 30px 30px 0 0 ;
+	width: 17rem;
+	height: 9rem;
 	object-fit: cover; 
-	border-radius: 10px 10px 0 0;
 }
-
-#populaires .IMG_style
-{
-	width: 300px;
-	height: 175px;
-	object-fit: cover; 
-	border-radius: 10px 0px 0 10px;
-}
-
 
 article .Description
 { 
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-
 	border: 2px solid white;
-	border-radius:10px;
+	border-radius:30px;
 	background: white;
 
-	
-	margin: 10px;
-}
-aside .Description
-{
-	display: flex;
-  	flex-direction: row;
-
-  		border: 2px solid white;
-	border-radius:10px;
-	background: white;
-		margin: 10px;
+	margin : 10px;
 }
 
-.Description .Description_pop
-{
-	display: flex;
-  	flex-direction: column;
-}
-
-
+/*----------------------------------------------------------------------------------------------------*/
+/*accomodation ASIDE*/
+/*----------------------------------------------------------------------------------------------------*/
 .pop_title
 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
+#populaires
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+#populaires .Description
+{
+	display: flex;
+	border: 2px solid white;
+	border-radius:30px;
+	background: white;
+	margin : 10px;
+	
+}
+
+#populaires .IMG_style
+{
+	width: 200px;
+	height: 150px;
+	
+	object-fit: cover; 
+	border-radius: 30px 0px 0px 30px;
+}
+
+#populaires p 
+{
+	margin-top:0em;
+	margin-bottom:0em;
+}
+
+#populaires h3
+{
+	margin-bottom:0.5em;
+}
+
+
+
+
+
 
 /*----------------------------------------------------------------------------------------------------*/
 /*ACTIVITY*/
@@ -265,15 +294,15 @@ aside .Description
 {
 	height: 100%;
 	margin: 10px;
-	border-radius: 30px 30px 30px 30px; 	
+	border-radius: 30px; 	
 }
 .petitconteneur img
 {
-	height: 200px;
+	height: 150px;
 }
 .grandconteneur img
 {
-	height: 600px;
+	height: 400px;
 
 }
 
@@ -287,7 +316,7 @@ aside .Description
 {
 	height: 100%;
 	margin: 10px;
-	border-radius: 30px 30px 30px 30px; 
+	border-radius: 30px; 
 
 }
 
@@ -295,6 +324,7 @@ a
 {
 
 	display: inline-block;
+	text-decoration: none;    
 }
 
 
@@ -306,6 +336,11 @@ a
 	width: 300px;
 }
 
+.Activity_border 
+{
+	box-shadow: 1px 1px 12px rgba(194, 194, 194, 0.397);
+
+}
 /*----------------------------------------------------------------------------------------------------*/
 /*POPULAR*/
 /*----------------------------------------------------------------------------------------------------*/
@@ -326,7 +361,7 @@ a
 /*----------------------------------------------------------------------------------------------------*/
 #accommodation article
 {
-	border-radius: 10px;
+	border-radius: 30px;
 	background: #eee; 
 	margin: 15px;
 	padding: 15px 25px;
@@ -334,28 +369,17 @@ a
 
 aside
 {
-	border-radius: 10px;
+	border-radius: 30px;
 	background: #eee; 
 	margin: 15px;
 	padding: 15px 25px;
-	border: 1px solid rgb(255, 174, 0);
 }
-
-article
-{
-	border: 1px solid rgb(255, 0, 106);
-}
-
 
 footer
 {
 	background: #eee; 
 	padding: 15px 25px;
 }
-
-
-
-
 
 .text
 {
