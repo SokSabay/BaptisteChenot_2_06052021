@@ -1,9 +1,214 @@
-@media screen and (max-width: 1280px)
-{
-    #accommodation
-	{
-		display: flex;
-		flex-direction: column-reverse;
-    	justify-content: space-between;
-	}
+@media screen and (max-width: 1270px) {
+  #en_tete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+  }
+  #bloc_page {
+    width: 100%;
+    margin: 0;
+  }
+  #logo {
+    width: 100px;
+    height: auto;
+  }
+
+  #HEADER_inscription {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #Header_LOGO {
+    width: 50%;
+  }
+  /*----------------------------------------------------------------------------------------------------*/
+  /*accomodation ARTICLE*/
+  /*----------------------------------------------------------------------------------------------------*/
+
+  #Header_Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+  }
+  #HEADER_LOGO {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #HEADER_HEB {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #HEADER_ACT {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #HEADER_INS {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /*----------------------------------------------------------------------------------------------------*/
+  /*accomodation ARTICLE*/
+  /*----------------------------------------------------------------------------------------------------*/
+  #accommodation {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  #accommodation article {
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  #hebergements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  #hebergements .Description {
+    display: flex;
+    flex-direction: column;
+
+    border: 4px solid white;
+    border-radius: 30px;
+    background: white;
+    overflow: hidden;
+
+    height: 18em;
+    width: 95%;
+    padding: 0;
+    border-radius: 30px;
+    display: block;
+    transition-duration: 1s;
+  }
+  #hebergements .IMG_style {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 10em;
+  }
+
+  /*----------------------------------------------------------------------------------------------------*/
+  /*accomodation ASIDE*/
+  /*----------------------------------------------------------------------------------------------------*/
+
+  #accommodation aside {
+    height: fit-content;
+    width: 100%;
+    border-radius: 0;
+  }
+  #populaires {
+    border: 2px solid palegoldenrod;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #populaires .Description {
+    height: 100%;
+    width: 95%;
+    transition-duration: 1s;
+  }
+  #populaires .IMG_style {
+    height: 18em;
+    object-fit: cover;
+    max-width: 100%;
+    width: 14em;
+  }
+  #FILTER {
+    display: flex;
+    flex-direction: column;
+  }
+  #FILTER_ICON {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #LePied {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #activite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /*----------------------------------------------------------------------------------------------------*/
+  /*ACTIVITY*/
+  /*----------------------------------------------------------------------------------------------------*/
+  .petitconteneur a {
+    height: 18em;
+    margin: 10px;
+  }
+  .grandconteneur a {
+    height: 18em;
+    margin: 10px;
+  }
+  .Activity_border img {
+    height: 10em;
+  }
+
+  /*----------------------------------------------------------------------------------------------------*/
+  /*FOOTER*/
+  /*----------------------------------------------------------------------------------------------------*/
+  #LePied {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .search_icon {
+    display: block;
+    background-color: blue;
+    color: white;
+  }
+  #Search i {
+    background-color: transparent;
+  }
+
+  .search_text {
+    display: none;
+    background-color: inherit;
+  }
+
+  #Search {
+    display: flex;
+
+    background-color: white;
+    width: 20em;
+    height: 50px;
+    border: 2px solid #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+  }
 }
