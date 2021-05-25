@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="font.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 1280px)"
@@ -17,13 +18,14 @@
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <div id="bloc_page">
+      <!-- Cette partie comprend le logo + boutons de naviguation et inscription  -->
       <header>
         <div id="Header_Grid">
           <div id="HEADER_LOGO">
@@ -45,6 +47,7 @@
         </div>
       </header>
 
+      <!-- Création de la bar de recherche -->
       <section id="Search_bar">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -62,8 +65,8 @@
           </button>
         </div>
       </section>
-      <i class="fas fa-search"></i>
 
+      <!-- Filtres + info bulle -->
       <section id="FILTER">
         <h3>Filtres</h3>
         <div id="FILTER_ICON">
@@ -97,95 +100,101 @@
         </div>
       </section>
 
-      <p>
-        <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans
-        cette ville
+      <p class="info_bulle">
+        <i class="taost fas fa-info"></i
+        ><span class="info_text"
+          >Plus de 500 logements sont disponibles dans cette ville</span
+        >
       </p>
 
+      <!-- article et aside -->
       <div id="accommodation">
         <article>
           <h1>Hébergements Marseille</h1>
           <div id="hebergements">
-            <a class="Description">
-              <img
-                class="IMG_style"
-                src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Photo de Marseille"
-              />
+            <div class="vignette_row">
+              <a class="Description">
+                <img
+                  class="IMG_style"
+                  src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="Photo de Marseille"
+                />
 
-              <h3>Auberge de la Cannebière</h3>
-              <p>Nuit à partir de <strong>25€</strong></p>
-              <p>
-                <span class="etoile_bleu">★★★★</span
-                ><span class="etoile_grise">★</span>
-              </p>
-            </a>
+                <h3>Auberge de la Cannebière</h3>
+                <p>Nuit à partir de <strong>25€</strong></p>
+                <p>
+                  <span class="etoile_bleu">★★★★</span
+                  ><span class="etoile_grise">★</span>
+                </p>
+              </a>
 
-            <a class="Description">
-              <img
-                class="IMG_style"
-                src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                alt="Photo de Marseille"
-              />
+              <a class="Description">
+                <img
+                  class="IMG_style"
+                  src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="Photo de Marseille"
+                />
 
-              <h3>Hôtel du port</h3>
-              <p>Nuit à partir de <strong>52€</strong></p>
-              <p><span class="etoile_bleu">★★★★★</span></p>
-            </a>
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de <strong>52€</strong></p>
+                <p><span class="etoile_bleu">★★★★★</span></p>
+              </a>
 
-            <a class="Description">
-              <img
-                class="IMG_style"
-                src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                alt="Photo de Marseille"
-              />
-              <h3>Hôtel les mouettes</h3>
-              <p>Nuit à partir de <strong>76€</strong></p>
-              <p>
-                <span class="etoile_bleu">★★★★</span
-                ><span class="etoile_grise">★</span>
-              </p>
-            </a>
+              <a class="Description">
+                <img
+                  class="IMG_style"
+                  src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt="Photo de Marseille"
+                />
+                <h3>Hôtel les mouettes</h3>
+                <p>Nuit à partir de <strong>76€</strong></p>
+                <p>
+                  <span class="etoile_bleu">★★★★</span
+                  ><span class="etoile_grise">★</span>
+                </p>
+              </a>
+            </div>
+            <div class="vignette_row">
+              <a class="Description">
+                <img
+                  class="IMG_style"
+                  src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  alt="Photo de Marseille"
+                />
 
-            <a class="Description">
-              <img
-                class="IMG_style"
-                src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                alt="Photo de Marseille"
-              />
+                <h3>Hôtel de la mer</h3>
+                <p>Nuit à partir de <strong>46€</strong></p>
+                <p>
+                  <span class="etoile_bleu">★★★</span
+                  ><span class="etoile_grise">★★</span>
+                </p>
+              </a>
 
-              <h3>Hôtel de la mer</h3>
-              <p>Nuit à partir de <strong>46€</strong></p>
-              <p>
-                <span class="etoile_bleu">★★★</span
-                ><span class="etoile_grise">★★</span>
-              </p>
-            </a>
+              <a class="Description">
+                <img
+                  class="IMG_style"
+                  src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  alt="Photo de Marseille"
+                />
+                <h3>Auberge Le Panier</h3>
+                <p>Nuit à partir de <strong>23€</strong></p>
+                <p>
+                  <span class="etoile_bleu">★★★★</span
+                  ><span class="etoile_grise">★</span>
+                </p>
+              </a>
 
-            <a class="Description">
-              <img
-                class="IMG_style"
-                src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                alt="Photo de Marseille"
-              />
-              <h3>Auberge Le Panier</h3>
-              <p>Nuit à partir de <strong>23€</strong></p>
-              <p>
-                <span class="etoile_bleu">★★★★</span
-                ><span class="etoile_grise">★</span>
-              </p>
-            </a>
-
-            <a class="Description">
-              <img
-                class="IMG_style"
-                src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="Photo de Marseille"
-              />
-              <h3>Hôtel chez Amina</h3>
-              <p>Nuit à partir de <strong>96€</strong></p>
-              <p><span class="etoile_bleu">★★★★★</span></p>
-            </a>
+              <a class="Description">
+                <img
+                  class="IMG_style"
+                  src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  alt="Photo de Marseille"
+                />
+                <h3>Hôtel chez Amina</h3>
+                <p>Nuit à partir de <strong>96€</strong></p>
+                <p><span class="etoile_bleu">★★★★★</span></p>
+              </a>
+            </div>
           </div>
           <a>Afficher plus</a>
         </article>
@@ -207,7 +216,9 @@
               <div class="Description_pop">
                 <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à partir de <strong>128€</strong></p>
-                <p><span class="etoile_bleu">★★★★★</span></p>
+                <div class="etoile_espace">
+                  <span class="etoile_bleu">★★★★★</span>
+                </div>
               </div>
             </a>
 
@@ -222,10 +233,10 @@
               <div class="Description_pop">
                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                 <p>Nuit à partir de <strong>71€</strong></p>
-                <p>
+                <div class="etoile_espace">
                   <span class="etoile_bleu">★★★★</span
                   ><span class="etoile_grise">★</span>
-                </p>
+                </div>
               </div>
             </a>
 
@@ -240,16 +251,17 @@
               <div class="Description_pop">
                 <h3>Hôtel tout bleu et Blanc</h3>
                 <p>Nuit à partir de <strong>68€</strong></p>
-                <p>
+                <div class="etoile_espace">
                   <span class="etoile_bleu">★★★★</span
                   ><span class="etoile_grise">★</span>
-                </p>
+                </div>
               </div>
             </a>
           </div>
         </aside>
       </div>
 
+      <!-- Partie activité -->
       <article id="ACTIVITY">
         <h1>Activités à Marseille</h1>
         <div id="activite">
@@ -314,6 +326,7 @@
         </div>
       </article>
     </div>
+    <!-- Pied de page -->
     <footer>
       <div id="LePied">
         <div class="pied">

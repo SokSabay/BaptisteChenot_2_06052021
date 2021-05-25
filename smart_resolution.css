@@ -9,12 +9,18 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 5px;
+    margin: 0;
+    justify-content: center;
   }
   #bloc_page {
     width: 100%;
     margin: 0;
   }
+
+  /*----------------------------------------------------------------------------------------------------*/
+  /*accomodation ARTICLE*/
+  /*----------------------------------------------------------------------------------------------------*/
+
   #logo {
     width: 100px;
     height: auto;
@@ -28,6 +34,46 @@
   #Header_LOGO {
     width: 50%;
   }
+
+  #HEADER_HEB {
+    padding-bottom: 2em;
+    border-top: 0;
+    line-height: 2em;
+    border-bottom: 0.4em solid #0065fc;
+    margin: 0;
+  }
+
+  #HEADER_ACT {
+    padding-bottom: 2em;
+    border-top: 0;
+    line-height: 2em;
+    border-bottom: 0.4em solid #f2f2f2;
+    margin: 0;
+    border-top: 0;
+  }
+
+  #HEADER_ACT:hover {
+    border-top: 0;
+    border-bottom: 0.4em solid #0065fc;
+    transition-duration: 0.4s;
+  }
+  #HEADER_INS:hover {
+    padding: 2em;
+    border-top: 0;
+
+    border-top: 0.4em solid transparent;
+    line-height: 2em;
+    transition-duration: 0.4s;
+  }
+  /*----------------------------------------------------------------------------------------------------*/
+  /*accomodation Barre de recherche*/
+  /*----------------------------------------------------------------------------------------------------*/
+  #Search_bar {
+    margin: 2em;
+  }
+  #FILTER {
+    margin: 2em;
+  }
   /*----------------------------------------------------------------------------------------------------*/
   /*accomodation ARTICLE*/
   /*----------------------------------------------------------------------------------------------------*/
@@ -35,13 +81,15 @@
   #Header_Grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 0;
     grid-auto-rows: minmax(100px, auto);
     text-align: center;
   }
   #HEADER_LOGO {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
+    margin-left: 1em;
   }
   #HEADER_HEB {
     grid-column: 1;
@@ -54,6 +102,7 @@
   #HEADER_INS {
     grid-column: 2;
     grid-row: 1;
+    text-align: end;
   }
 
   /*----------------------------------------------------------------------------------------------------*/
@@ -112,6 +161,10 @@
   /*----------------------------------------------------------------------------------------------------*/
   /*accomodation ASIDE*/
   /*----------------------------------------------------------------------------------------------------*/
+  aside {
+    margin: 0;
+    padding: 0;
+  }
 
   #accommodation aside {
     height: fit-content;
@@ -119,7 +172,6 @@
     border-radius: 0;
   }
   #populaires {
-    border: 2px solid palegoldenrod;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -130,15 +182,16 @@
   }
 
   #populaires .Description {
-    height: 100%;
+    height: 15em;
     width: 95%;
     transition-duration: 1s;
   }
   #populaires .IMG_style {
-    height: 18em;
     object-fit: cover;
-    max-width: 100%;
-    width: 14em;
+
+    min-width: 15em;
+    height: 100%;
+    object-fit: cover;
   }
   #FILTER {
     display: flex;
@@ -160,6 +213,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .vignette_row {
+    display: flex;
+    flex-direction: column;
+  }
   /*----------------------------------------------------------------------------------------------------*/
   /*ACTIVITY*/
   /*----------------------------------------------------------------------------------------------------*/
@@ -171,8 +229,11 @@
     height: 18em;
     margin: 10px;
   }
-  .Activity_border img {
-    height: 10em;
+
+  #ACTIVITY img {
+    height: 14em;
+    width: 100%;
+    object-fit: cover;
   }
 
   /*----------------------------------------------------------------------------------------------------*/
@@ -187,13 +248,22 @@
     margin-right: 0;
   }
 
+  /*----------------------------------------------------------------------------------------------------*/
+  /*BOUTON*/
+  /*----------------------------------------------------------------------------------------------------*/
+
   .search_icon {
     display: block;
-    background-color: blue;
+    background-color: #0065fc; /*  */
+    border: none;
     color: white;
-  }
-  #Search i {
-    background-color: transparent;
+    width: 4em;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0.8em 0 0 0.8em;
   }
 
   .search_text {
@@ -209,6 +279,6 @@
     height: 50px;
     border: 2px solid #f2f2f2;
     overflow: hidden;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1em;
   }
 }

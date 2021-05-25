@@ -19,49 +19,43 @@
   height: auto;
 }
 
-.Menu {
-  border: none;
-  background-color: transparent;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.Menu:hover {
-  border-top: 2px solid #0065fc;
-  padding: 16px 32px;
-}
-
-#Header_LOGO {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
-#HEADER_inscription {
-  display: flex;
-}
-
-#HEADER_inscription a {
-  margin: 10px;
-}
 /*----------------------------------------------------------------------------------------------------*/
-/*Propriete des listes*/
+/*Grille pour le menu + logo*/
 /*----------------------------------------------------------------------------------------------------*/
 #Header_Grid {
   display: grid;
   grid-template-columns: 2fr repeat(3, 0.2fr);
 
-  grid-gap: 90px;
   grid-auto-rows: minmax(100px, auto);
   align-items: center;
 }
 
+#HEADER_HEB {
+  padding: 2em;
+  border-top: 0;
+
+  border-top: 0.4em solid #0065fc;
+  line-height: 2em;
+}
+
+#HEADER_ACT,
+#HEADER_INS {
+  padding: 2em;
+  border-top: 0;
+
+  border-top: 0.4em solid transparent;
+  line-height: 2em;
+}
+
+#HEADER_ACT:hover,
+#HEADER_INS:hover {
+  padding: 2em;
+  border-top: 0;
+
+  border-top: 0.4em solid #0065fc;
+  line-height: 2em;
+  transition-duration: 0.4s;
+}
 /*----------------------------------------------------------------------------------------------------*/
 /*SEARCH_BAR*/
 /*----------------------------------------------------------------------------------------------------*/
@@ -80,7 +74,7 @@
   background-color: #0065fc; /*  */
   border: none;
   color: white;
-  width: 150px;
+  width: 10em;
   height: 100%;
   text-align: center;
   text-decoration: none;
@@ -95,7 +89,7 @@
   width: 250px;
 }
 
-#Search i {
+.fa-map-marker-alt {
   width: 50px;
   height: 100%;
   background-color: #f2f2f2;
@@ -165,18 +159,44 @@
   padding-right: 5px;
 }
 
+.info_bulle {
+  display: flex;
+  align-items: center;
+}
+.fa-info {
+  border: 2px solid #fc007e;
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+.info_text {
+  margin-left: 1em;
+}
+
 /*----------------------------------------------------------------------------------------------------*/
-/*accomodation*/
+/*Effet d'ombre sur les vignettes*/
 /*----------------------------------------------------------------------------------------------------*/
 
-#accommodation a {
+#hebergements a,
+#populaires a {
   box-shadow: 1px 1px 12px rgba(194, 194, 194, 0.397);
+}
+
+.Activity_border {
+  box-shadow: 1px 1px 12px rgba(194, 194, 194, 0.397);
+  overflow: hidden;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
 /*accomodation ARTICLE*/
 /*----------------------------------------------------------------------------------------------------*/
 #accommodation {
+  /*Utilisation de Flexbox pour avoir aside et article à la même hauteur*/
   display: flex;
   justify-content: space-between;
   height: fit-content;
@@ -184,10 +204,14 @@
 }
 
 #accommodation article {
+  /*Réglage de la largeur de l'article + utilisation du flexbox pour les vignettes*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 75%;
+}
+.vignette_row {
+  display: flex;
 }
 
 article #hebergements {
@@ -196,6 +220,7 @@ article #hebergements {
 }
 
 #hebergements .Description {
+  /*Création des vignettes*/
   border: 4px solid white;
   border-radius: 30px;
   background: white;
@@ -229,12 +254,12 @@ article #hebergements {
 
 .etoile_bleu {
   color: #0065fc;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .etoile_grise {
   color: grey;
-  font-weight: bold;
+  font-weight: 700;
 }
 /*----------------------------------------------------------------------------------------------------*/
 /*accomodation ASIDE*/
@@ -277,6 +302,9 @@ aside {
 
 .Description_pop {
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
 }
 
 #populaires .IMG_style {
@@ -287,12 +315,14 @@ aside {
 }
 
 #populaires p {
-  margin-top: 0em;
-  margin-bottom: 0em;
+  margin: 0;
 }
 
 #populaires h3 {
-  margin-bottom: 0.5em;
+  margin: 0;
+}
+.etoile_espace {
+  margin-top: auto;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -346,17 +376,9 @@ a {
   width: 300px;
 }
 
-.Activity_border {
-  box-shadow: 1px 1px 12px rgba(194, 194, 194, 0.397);
-  overflow: hidden;
-}
-
 #activite h3 {
   margin: 10px;
 }
-/*----------------------------------------------------------------------------------------------------*/
-/*POPULAR*/
-/*----------------------------------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------------------------------*/
 /*FOOTER*/
@@ -394,3 +416,8 @@ nav ul {
 /*----------------------------------------------------------------------------------------------------*/
 /*TYPO*/
 /*----------------------------------------------------------------------------------------------------*/
+
+a {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
