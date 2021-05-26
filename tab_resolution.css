@@ -1,37 +1,32 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   #en_tete {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-  }
   #bloc_page {
     width: 100%;
+    margin: 0 auto;
+  }
+  body {
     margin: 0;
   }
+
   /*----------------------------------------------------------------------------------------------------*/
   /* HEADER*/
   /*----------------------------------------------------------------------------------------------------*/
-
-  #logo {
-    width: 100px;
-    height: auto;
+  #Header_Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
   }
-
-  #HEADER_inscription {
+  #HEADER_LOGO {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
-    flex-wrap: wrap;
-  }
-
-  #Header_LOGO {
-    width: 50%;
+    margin-left: 1em;
   }
 
   #HEADER_HEB {
@@ -64,42 +59,30 @@
     line-height: 2em;
     transition-duration: 0.4s;
   }
-  /*----------------------------------------------------------------------------------------------------*/
-  /* HEADER_GRID*/
-  /*----------------------------------------------------------------------------------------------------*/
-
-  #Header_Grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0;
-    grid-auto-rows: minmax(100px, auto);
-    text-align: center;
-  }
-  #HEADER_LOGO {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    margin-left: 1em;
-  }
-  #HEADER_HEB {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  #HEADER_ACT {
-    grid-column: 2;
-    grid-row: 2;
-  }
   #HEADER_INS {
     grid-column: 2;
     grid-row: 1;
     text-align: end;
   }
+  /*----------------------------------------------------------------------------------------------------*/
+  /* HEADER_GRID*/
+  /*----------------------------------------------------------------------------------------------------*/
 
   /*----------------------------------------------------------------------------------------------------*/
   /*Barre de recherche*/
   /*----------------------------------------------------------------------------------------------------*/
-  #Search_bar {
-    margin: 2em;
+  .search_icon {
+    display: block;
+    background-color: #0065fc; /*  */
+    border: none;
+    color: white;
+    width: 4.5em;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0.8em 0 0 0.8em;
   }
 
   .search_text {
@@ -117,33 +100,23 @@
     overflow: hidden;
     border-radius: 1em;
   }
-
-  .search_icon {
-    display: block;
-    background-color: #0065fc; /*  */
-    border: none;
-    color: white;
-    width: 4.5em;
-    height: 100%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 0.8em 0 0 0.8em;
+  #Search_bar {
+    margin: 1em;
   }
-
   /*----------------------------------------------------------------------------------------------------*/
   /* FILTRES*/
   /*----------------------------------------------------------------------------------------------------*/
-
   #FILTER {
     display: flex;
     flex-direction: column;
-    margin: 2em;
   }
   #FILTER_ICON {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  #FILTER {
+    margin: 1em;
   }
 
   /*----------------------------------------------------------------------------------------------------*/
@@ -166,45 +139,31 @@
   }
   #hebergements {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+    flex-direction: row;
+    width: 96%;
   }
-
+  .vignette_row {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
   #hebergements .Description {
     display: flex;
     flex-direction: column;
 
-    margin: 0 0 1em 0;
     border: 4px solid white;
     border-radius: 30px;
     background: white;
     overflow: hidden;
-
-    height: 12em;
-    width: 95%;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 15em;
+    width: 90%;
     padding: 0;
     border-radius: 30px;
     display: block;
     transition-duration: 1s;
   }
-
-  .vignette_row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  #hebergements .IMG_style {
-    object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    height: 6em;
-  }
-
   /*----------------------------------------------------------------------------------------------------*/
   /*accomodation ASIDE*/
   /*----------------------------------------------------------------------------------------------------*/
@@ -218,79 +177,52 @@
     width: 100%;
     border-radius: 0;
   }
-  #populaires {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
 
+  #populaires {
+    width: 100%;
+  }
   #populaires .Description {
-    height: 10em;
     width: 95%;
-    transition-duration: 1s;
+    height: 12em;
   }
   #populaires .IMG_style {
     object-fit: cover;
 
-    min-width: 10em;
+    min-width: 18em;
     height: 100%;
     object-fit: cover;
   }
-
   /*----------------------------------------------------------------------------------------------------*/
   /*ACTIVITY*/
   /*----------------------------------------------------------------------------------------------------*/
-
   #activite {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .vignette_row {
+  .petitconteneur {
     display: flex;
     flex-direction: column;
   }
-
+  .grandconteneur {
+    display: flex;
+    flex-direction: column;
+  }
   .ACT_conteneur {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
-
-  .petitconteneur a {
-    height: 10em;
-    margin: 10px;
-  }
-  .grandconteneur a {
-    height: 10em;
-    margin: 10px;
-  }
-
-  #ACTIVITY img {
-    height: 6em;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  #ACTIVITY {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
   /*----------------------------------------------------------------------------------------------------*/
   /*FOOTER*/
   /*----------------------------------------------------------------------------------------------------*/
+
   #LePied {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    text-align: left;
-
-    margin-left: 0;
-    margin-right: 0;
+  }
+  .pied {
+    margin-right: 1.5em;
   }
 }
