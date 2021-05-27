@@ -51,26 +51,27 @@ ul a {
 .Activity_border {
   box-shadow: 1px 1px 12px rgba(194, 194, 194, 0.397);
   overflow: hidden;
-}
+} 
+
 .etoile_bleu {
     color: #0065fc;
     font-weight: 700;
     font-size: 1.5em;
-  }
+}
   
-  .etoile_grise {
-    color: #f2f2f2;
-    font-weight: 700;
-    font-size: 1.5em;
-  }
+.etoile_grise {
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.5em;
+}
 
-  a {
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: "Raleway", sans-serif;
-    color: black;
-  }
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
 
 }
 
